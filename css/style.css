@@ -1,0 +1,55 @@
+
+html,body{
+	height: 100%
+
+}
+body{
+	background: #EBEBF3;
+}
+#mivideo{
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	border-radius: 0.3em;
+
+}
+.card{
+	margin-top: 2em;
+	margin-bottom: 4em;
+}
+div{
+	margin: 0 auto;
+	display: block;
+}
+h1{
+	text-align: center;
+	color: #272727;
+	margin-top: 1em;
+	
+}
+h2{
+	margin: 0 auto;
+	margin-left:16em;
+	display: block;
+}
+footer{
+	height: 4em;
+}
+
+/*pg juegos*/
+.dados{
+	display: flex;
+	justify-content: space-around;
+}
+.dado1, .dado2{
+	height: 60%;
+}.app{
+	text-align: center;
+	margin-top: 2em;
+}
+.texto{
+	text-align: center;
+}
+.divimg{
+	height:20em; 
+}

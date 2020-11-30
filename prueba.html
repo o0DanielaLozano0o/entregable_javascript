@@ -1,0 +1,136 @@
+<html>
+
+	
+<head>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<title>Dos dados</title>
+<LINK media=screen href="estilos/pixeles.css" type=text/css 
+rel=stylesheet>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- // MenuBuilder 3.0
+
+
+
+function load2(form) {
+
+     var url = form.Llist_2.options[form.Llist_2.selectedIndex].value;
+
+     if (url != '') location.href = url;
+
+     return false;
+
+}
+
+// -->
+
+</SCRIPT>
+
+
+</head>
+
+	<body onLoad="rolldados()"><!-- contenedor-->
+
+	<h1>SIMULACIÓN DEL LANZAMIENTO DE DADOS CON JAVASCRIPT</h1>
+<H2>SCRIPT para simular el lanzamiento de uno, dos, tres, cuatro, cinco o seis dados</H2>
+
+<br> <br>
+
+  <SCRIPT LANGUAGE="JavaScript">
+
+var face0=new Image()
+
+face0.src="imagenes/d1.gif"
+
+var face1=new Image()
+
+face1.src="imagenes/d2.gif"
+
+var face2=new Image()
+
+face2.src="imagenes/d3.gif"
+
+var face3=new Image()
+
+face3.src="imagenes/d4.gif"
+
+var face4=new Image()
+
+face4.src="imagenes/d5.gif"
+
+var face5=new Image()
+
+face5.src="imagenes/d6.gif"</SCRIPT>
+
+<form name="menuBuilder">
+  <div align="left">
+    <select name="Llist_2" onChange="load2(this.form)">
+      <option value="" selected>Elije el número de dados</option>
+      <option value="1dadobis.htm"s>1 dado </option>
+      <option value="2dadosbis.htm">2 dados </option>
+      <option value="3dadosbis.htm">3 dados </option>
+      <option value="4dadosbis.htm"s>4 dados</option>
+      <option value="5dadosbis.htm">5 dados</option>
+      <option value="6dadosbis.htm">6 dados</option>
+      
+    </select>
+  </div>
+  </form>
+<p align=center>
+
+<TABLE BORDER=0 CELLSPACING=3 CELLPADDING=2>
+
+   <TR>
+
+      <TD>
+
+         <CENTER>
+
+        <IMG SRC="D1.gif" BORDER=0 ALIGN=bottom name=mydados> 
+
+      </CENTER>
+
+      </TD>
+
+      <TD>
+
+         <CENTER>
+
+        <IMG SRC="D6.gif" BORDER=0 ALIGN=bottom name=mydados2> 
+
+      </CENTER>
+
+      </TD>
+
+   </TR>
+
+</TABLE>
+
+ <FORM ACTION="" METHOD=POST>
+  <P>
+    <INPUT TYPE=button NAME=Button VALUE="Tirar dados!" onclick="rolldados()">
+    <font color="#000066" size="+1">
+    
+    </font> 
+</FORM> <SCRIPT LANGUAGE="">function rolldados(){
+
+//genera un entero aleatorio entre 0 y 5
+
+var randomdados=Math.round(Math.random()*5)
+
+document.images["mydados"].src=eval("face"+randomdados+".src")
+
+var randomdados2=Math.round(Math.random()*5)
+
+document.images["mydados2"].src=eval("face"+randomdados2+".src")
+
+// if (randomdados==randomdados2 ) {alert('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa !!!' + '\n' +  '')}
+
+
+
+}</SCRIPT>
+
+
+
+</BODY></HTML>
